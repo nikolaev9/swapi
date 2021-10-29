@@ -1,0 +1,14 @@
+swapi.people:
+  path: '/people'
+  defaults:
+    _controller: '\Drupal\swapi\Controller\PeoplePageController::content'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+swapi.form:
+  path: '/myform'
+  defaults:
+    _title: 'Контактная форма'
+    _form: '\Drupal\swapi\Form\MyContact'
+  requirements:
+    _permission: 'access content'
